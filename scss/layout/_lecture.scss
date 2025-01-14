@@ -1,0 +1,26 @@
+.lecture {
+  margin-top: 80px;
+  min-height: 250px;
+  &__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 72px;
+  }
+  &__info {
+    max-width: 765px;
+    font-size: 36px;
+    line-height: 48.6px;
+    font-family: "Merriweather";
+    font-weight: normal;
+    text-transform: uppercase;
+    span {
+      color: $bg-red;
+      font-weight: bold;
+    }
+    &__img {
+
+    }
+  }
+}

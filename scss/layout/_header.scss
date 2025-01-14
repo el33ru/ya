@@ -1,0 +1,32 @@
+.page-header {
+  min-height: 64px;
+  &__logo {
+    margin-left: 72px;
+    z-index: 1;
+    svg {
+      margin-top: 26px;
+      fill: #231F20;
+    }
+    p {
+      display: inline-block;
+      margin: 26px 0 0 0;
+      text-transform: uppercase;
+      font-size: 16.65px;
+      line-height: 17.98px;
+      color: #595653;
+    }
+  }
+}
+
+.user-list__search-icon {
+  position: absolute;
+  top: 32px;
+  left: 32px;
+
+  width: 18px;
+  height: 18px;
+
+  opacity: 0.2;
+
+  fill: #231F20;
+}

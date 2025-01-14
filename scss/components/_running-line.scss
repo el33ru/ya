@@ -1,0 +1,48 @@
+.running-line {
+  width: 100%;
+  overflow: hidden;
+  background-color: $bg-red;
+  &__wrapper {
+    margin: 0;
+    padding: 15px 10px;
+    width: fit-content;
+    font-family: Merriweather;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 24.2px;
+    color: #ffffff;
+    white-space: nowrap;
+    text-transform: uppercase;
+    animation: run 30s linear infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+    span {
+      //display: block;
+      position: relative;
+      padding-right: 25px;
+      &::after {
+        content: "";
+        position: absolute;
+        right: 8px;
+        top: 12px;
+        //bottom: 0;
+        margin: 0 auto;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        color: #ffffff;
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+@keyframes run {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}

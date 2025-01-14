@@ -1,0 +1,92 @@
+.major {
+  min-height: 571px;
+  //background-image: url("../../img/header_background.png");
+  ////min-height: 700px;
+  ////background-image: url("../../img/Group 17.png");
+  //background-size: cover;
+  //background-repeat: no-repeat;
+  //background-position: center;
+  //position: relative;
+  //top:-100px;
+  //min-height: 700px;
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url("../../img/header_background.png");
+    min-height: 700px;
+    //background-image: url("../../img/Group 17.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  //&__img {
+  //  position: absolute;
+  //  z-index: -1;
+  //  top: 0;
+  //  left: 0;
+  //  right: 0;
+  //  min-height: 700px;
+  //  //background-size: contain;
+  //  background-repeat: no-repeat;
+  //  background-position: center;
+  //}
+  &__wrapper {
+    margin: 0 72px;
+    max-width: 542px;
+  }
+  h1 {
+    margin: 62px 0 0 0;
+    font-family: "Merriweather";
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 66px;
+    text-transform: uppercase;
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+  h2 {
+    margin: 24px 0 0 0;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 0 0 0;
+    button {
+      display: block;
+      box-sizing: border-box;
+      cursor: pointer;
+      padding: 13px;
+      background-color: #1F1F1F;
+      color: #ffffff;
+      line-height: 20.8px;
+      font-weight: 500;
+      border-radius: 66px;
+      max-width: 263px;
+      width: 100%;
+      &:hover {
+        background-color: $bg-yellow;
+        color: white;
+        border: $bg-yellow;
+      }
+      &:last-child {
+        margin-left: 16px;
+        background-color: transparent;
+        border: 2px solid #1F1F1F;
+        color: #1f1f1f;
+        &:hover {
+          background-color: $bg-black;
+          color: white;
+        }
+      }
+    }
+  }
+}
