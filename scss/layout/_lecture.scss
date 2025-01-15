@@ -1,14 +1,22 @@
 .lecture {
   margin-top: 80px;
-  min-height: 250px;
+  //min-height: 250px;
   &__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     margin: 0 72px;
+    &--modifier {
+      margin-top: 15px;
+      margin-left: 45px;
+    }
+  }
+  &__text {
+    margin-left: 15px;
   }
   &__info {
+    margin: 0;
     max-width: 765px;
     font-size: 36px;
     line-height: 48.6px;
@@ -19,8 +27,56 @@
       color: $bg-red;
       font-weight: bold;
     }
-    &__img {
-
+  }
+  &__img {
+    &--modifier {
+      max-width: 528px;
+      width: 100%;
     }
+  }
+  &__table {
+    margin-top: 60px;
+    border-spacing: 0;
+    max-width: 100%;
+    width: 100%;
+    tr {
+      td {
+        padding: 15px;
+        font-family: "Golos Text";
+        font-weight: 500;
+        font-size: 20px;
+        border-bottom: 2px solid #D0D0D0;
+        &:nth-child(odd) {
+          width: 290px;
+          padding-left: 0;
+          font-weight: normal;
+          color: rgba(49, 49, 49, 0.7);
+          border-right: 2px solid #D0D0D0;
+        }
+      }
+      &:first-child {
+        td {
+          padding-top: 0;
+        }
+      }
+      &:last-child {
+        td {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+      }
+    }
+  }
+  &__ask {
+    margin-top: 45px;
+    font-family: "Golos Text";
+    font-weight: normal;
+    font-size: 20px;
+    color: #3057A2;
+  }
+  &__discount {
+    margin-right: 10px;
+    text-decoration: line-through;
+    text-decoration-color: $bg-red;
   }
 }
