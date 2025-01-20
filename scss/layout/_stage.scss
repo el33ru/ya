@@ -1,0 +1,94 @@
+.stage {
+  margin-top: 165px;
+  &__wrapper{
+    margin: 0 72px;
+    h3 {
+      position: relative;
+      margin: 0;
+      max-width: 805px;
+      font-size: 54px;
+      font-family: "Merriweather";
+      font-weight: normal;
+      text-transform: uppercase;
+      span {
+        position: absolute;
+        bottom: 10px;
+        left: 300px;
+        font-size: 20px;
+        font-family: "Golos Text";
+        font-weight: normal;
+        color: $bg-blue;
+        text-transform: none;
+      }
+    }
+    ol {
+      @include reset-list;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 55px;
+      counter-reset: num;
+      li {
+        position: relative;
+        background-image: url("../../img/bg_group.png");
+        //background-image: url("../../img/paper.png");
+        padding: 20px 20px 20px 70px;
+        font-size: 20px;
+        font-family: "Golos Text";
+        font-weight: 500;
+        line-height: 24px;
+        //&::before {
+        //  content: "";
+        //  background-image: url("../../img/paper_relief.png");
+        //  opacity: 1;
+        //  position: absolute;
+        //  z-index: -1;
+        //  top: 0; left: 0; right: 0; bottom: 0;
+        //  width: 100%;
+        //  height: 100%;
+        //}
+        &::before {
+          content: counter(num);
+          counter-increment: num;
+          display: inline-block;
+          position: absolute;
+          top: 20px;
+          left: 20px;
+          width: 35px;
+          height: 35px;
+          text-align: center;
+          line-height: 30px;
+          font-size: 20px;
+          font-family: "Golos Text";
+          font-weight: 500;
+          background: #fff;
+          color: #000;
+          border-radius: 50%;
+      }
+        &:nth-child(3) {
+          grid-row: span 2;
+        }
+        &:nth-child(7) {
+          position: relative;
+          grid-column: span 2;
+          span {
+            display: block;
+            max-width: 415px;
+            width: 100%;
+          }
+          &::after {
+            content:"";
+            position: absolute;
+            bottom: 0;
+            right: -62px;
+            width: 401px;
+            height: 235px;
+            background-image: url("../../img/plane.png");
+            z-index: 99;
+          }
+        }
+      }
+    }
+  }
+}

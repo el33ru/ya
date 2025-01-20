@@ -1,5 +1,5 @@
 @import 'abstracts/variables';
-//@import 'abstracts/mixins';
+@import 'abstracts/mixins';
 //
 @import 'base/base';
 //
@@ -12,7 +12,7 @@
 @import 'layout/header';
 @import 'layout/major';
 @import 'layout/lecture';
-//@import 'layout/user-nav';
+@import 'layout/stage';
 //@import 'layout/page-main';
 //@import 'layout/index-catalog';
 //@import 'layout/popular';
